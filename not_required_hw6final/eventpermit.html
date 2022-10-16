@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Permit for event location</h1>
+
+<p>This is the form form for asking permit for an event on a specific campus location. </p>
+
+<form action="/eventpermitdata.html" id="form4" method="POST">
+<label for="ename">Event name:</label>
+<input type="text" id="ename" name="ename" form="form4">
+<br><br>
+
+<label for="edate">Event date:</label>
+<input type="text" id="edate" name="edate" form="form4">
+<br><br>
+
+<label for="etime">Event timing:</label>
+<input type="text" id="etime" name="etime" form="form4">
+<br><br>
+
+<p> This tells us who is funding or supervising the event </p>
+<label for="hostedby">Event hosted by:</label>
+<input type="text" id="hostedby" name="hostedby" form="form4">
+<br><br>
+
+<label for="intendedlocation">Intended location of event:</label>
+<input type="text" id="intendedlocation" name="intendedlocation" form="form4">
+<br><br>
+
+<p> Which security members will you need?</p>
+<label for="JN">John Newman </label>
+<input id="JN" name="security" type="checkbox" value="JN">
+<br>
+<label for="LB">Lara Benson </label>
+<input id="LB" name="security" type="checkbox" value="LB">
+<br>
+<label for="CB">Carl Baker </label>
+<input id="CB" name="security" type="checkbox" value="CB">
+
+<button type="button" class="cancelbtn">Cancel</button>
+<input type="submit" value="Submit">
+
+</body>
+</html>

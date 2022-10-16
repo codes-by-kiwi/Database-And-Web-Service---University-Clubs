@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+		<h1>Competiton Application</h1>
+
+		<p>This form lets you apply for specific competitons.</p>
+
+		<form action="/dataforadminaccess.html" id="form6" method="POST">
+
+			<label for="fname">First name:</label>
+			<input type="text" id="fname" name="fname" form="form8">
+
+			<label for="lname">Last name:</label>
+			<input type="text" id="lname" name="lname" form="form8">
+			<br><br>
+
+			<label for="compapp">Competiton applying for:</label>
+			<input type="text" id="compapp" name="compapp" form="form8">
+			<br><br>
+
+
+			<label for="desc">Tell us a little bit about yourself:</label>
+			<input type="text" id="desc" name="desc" form="form8">
+			<br><br>
+
+
+				<label for="whataccessneeded">Attach your resume:</label>
+  				<input type="file" id="myfile" name="myfile" multiple><br>
+		
+
+
+			<script type="text/javascript" src="function.js"></script>
+			
+	
+	   <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
+ <img src="img/loading.gif" id="loading-img">
+
+
+			<button onclick="myFunction()">Reset</button>
+	
+
+		</form>
+	</body>
+</html>
