@@ -1,0 +1,28 @@
+<h1> html working </h1>
+
+<?php
+
+echo "file opening";
+include_once ('test_readonly.php');
+
+die "started";
+
+if(isset($_POST['submit']))
+{    
+    $searchValue = $_POST['q']; 
+    $cap = $_POST['cap']; 
+  
+  $sql = "SELECT * FROM `Location`";	
+  $result= $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  while ($row = $result ->fetch_assoc()) {
+    echo $row['Address'];
+  } 
+else{ 
+echo"No val";
+} 
+}
+
+?>
+

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="addressserach.css">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="jquery.autocomplete.js"></script>
+        <script>
+            jQuery(function(){
+            $("#search1").autocomplete("searchevents.php");
+        });
+        </script>
+    </head>
+    <body>
+        <form method="post" action="eventer.php">
+            <div class="imgcontainer">
+                <img src="image/logo.jpg" alt="logo" width="160px" height="160">
+            </div>
+          <input type="text" placeholder="Enter" class="holder" name="q" id="search1">
+          <button type="submit" name="submit">search</button>
+        </form>
+    </body>
+</html>
