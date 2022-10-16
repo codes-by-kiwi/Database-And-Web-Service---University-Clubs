@@ -1,0 +1,16 @@
+<?php
+include_once 'test.php';
+if(isset($_POST['save']))
+{	 
+	 $first_name = $_POST['fname'];
+	 $sql = "INSERT INTO Individual(mobile_no,ind_Email,ind_Name,ind_id,active_passive,)
+	 VALUES ('123-456-789','sthapa@jacobs-university.de','$first_name','10')";
+	 if (mysqli_query($conn, $sql)) {
+		echo "New record created successfully !";
+	 } else {
+		echo "Error: " . $sql . "
+" . mysqli_error($conn);
+	 }
+	 mysqli_close($conn);
+}
+?>
