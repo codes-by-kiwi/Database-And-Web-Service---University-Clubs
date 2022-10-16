@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Display all records from Database</title>
+</head>
+<body>
+
+<h2>Employee Details</h2>
+<table border="2">
+  <tr>
+   <td>Sr.No.</td>
+    <td>Full Name</td>
+  </tr>
+<?php
+
+include "test.php"; // Using database connection file here
+
+$records = mysqli_query($conn,"select * from Location"); // fetch data from database
+
+while($data = mysqli_fetch_array($records))
+{
+?>
+  <tr>
+    <td><a href="changer.php?name='$data['Address']'"><?php echo $data['Address']; ?></a></td>
+    <td><?php echo $data['Capacity']; ?></td>
+  </tr>	
+<?php
+}
+?>
+</table>
+
+<?php mysqli_close($conn); // Close connection ?>
+
+</body>
+</html>
